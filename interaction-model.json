@@ -1,0 +1,189 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "chemi buddy",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameToFormulaIntent",
+                    "slots": [
+                        {
+                            "name": "chemicalName",
+                            "type": "chemicalNameType"
+                        }
+                    ],
+                    "samples": [
+                        "chemical formula of {chemicalName}",
+                        "what's the chemical formula of {chemicalName}",
+                        "tell me the chemical formula of {chemicalName}"
+                    ]
+                },
+                {
+                    "name": "FormulaToNameIntent",
+                    "slots": [
+                        {
+                            "name": "chemicalFormula",
+                            "type": "chemicalFormulaType"
+                        }
+                    ],
+                    "samples": [
+                        "what's the chemical name of {chemicalFormula}",
+                        "tell me chemical name of {chemicalFormula}",
+                        "chemical name of {chemicalFormula}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "chemicalNameType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "calcium chloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calcium carbonate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ammonia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aluminium oxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aluminium hydroxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Acetone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Acetaldehyde"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "copper sulphate"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "chemicalFormulaType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "CdS"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C4H10"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3BO3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BaSO4"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BaCO3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4Cl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "(NH4)2CO3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "(NH4)HCO3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Al2(SO4)3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Al2O3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C2H2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CH3COCH3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CH3COOH"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Al(OH)3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CuSO4"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
