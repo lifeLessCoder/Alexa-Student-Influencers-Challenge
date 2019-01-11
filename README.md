@@ -1,6 +1,6 @@
 # Alexa-Student-Influencers-Challenge
 ## Chemi Buddy
-
+(in development)
 <p align="center">
   <img width="108" height="108" src="https://user-images.githubusercontent.com/33070301/51008803-5734a100-1573-11e9-88af-2b3fd9bd1ae4.png">
 </p>
