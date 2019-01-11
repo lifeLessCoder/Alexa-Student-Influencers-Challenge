@@ -1,6 +1,10 @@
 # Alexa-Student-Influencers-Challenge
 ## Chemi Buddy
 
+<p align="center">
+  <img width="108" height="108" src="https://user-images.githubusercontent.com/33070301/51008803-5734a100-1573-11e9-88af-2b3fd9bd1ae4.png">
+</p>
+
 A skill specially designed for kids to help them learn about the names and formulas of chemical compounds.
 
 Do you want to learn what's the chemical formula of copper sulfate? Or do you want to know what CH3COOH is called?? Or do you want your kids to become smart by learning chemical formulas and names? Then this is the right skill for you! 
