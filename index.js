@@ -271,6 +271,7 @@ const data = [
         formula : 'H2O'
     },
 ];
+var unattended = [];
 
 function getFormulaFromName(name){
  for(var i = 0; i < data.length; i++)
@@ -284,6 +285,11 @@ function getNameFromFormula(formula){
      if(data[i].formula.toLowerCase() === formula.toLowerCase())
          return data[i].name;
  return '';
+}
+
+function logReference(formula){
+    unattended.push(formula);
+    console.log(unattended);
 }
 
 const handlers = {
@@ -311,8 +317,10 @@ const handlers = {
         if(name !== '')
             this.response.speak('The chemical name of <say-as interpret-as="spell-out">' + formula + '</say-as> is ' + name + '. What else do you wanna know?').listen(REPROMPT);
         else
-            this.response.speak('Sorry I\'m still under developement.<audio src=\'soundbank://soundlibrary/cartoon/amzn_sfx_boing_long_1x_01\'/> What else do you wanna know?')
+        {this.response.speak('Sorry I\'m still evolving. I will soon come up with your requirement. <audio src=\'soundbank://soundlibrary/cartoon/amzn_sfx_boing_long_1x_01\'/> What else do you wanna know?')
             .listen(REPROMPT);
+        logReference(formula);
+        }
         this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
